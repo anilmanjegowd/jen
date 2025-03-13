@@ -7,6 +7,10 @@ pipeline{
             }
             
         }
-    }
+        stage("test"){
+            steps {
+                sh ''' echo " this is pwd"
+                pwd '''            }
+        }    }
   }
     
